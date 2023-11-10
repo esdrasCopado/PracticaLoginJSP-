@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="6.0" xmlns="https://jakarta.ee/xml/ns/jakartaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd">
+    <servlet>
+        <servlet-name>GamesControl</servlet-name>
+        <servlet-class>controller.GamesControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>VideoGamesControl</servlet-name>
+        <servlet-class>controller.VideoGamesControl</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>RegistroUsuario</servlet-name>
+        <servlet-class>controller.RegistroUsuario</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>InicioSesion</servlet-name>
+        <servlet-class>controller.InicioSesion</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GamesControl</servlet-name>
+        <url-pattern>/GamesControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>VideoGamesControl</servlet-name>
+        <url-pattern>/VideoGamesControl</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RegistroUsuario</servlet-name>
+        <url-pattern>/RegistroUsuario</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>InicioSesion</servlet-name>
+        <url-pattern>/InicioSesion</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>

@@ -1,0 +1,11 @@
+com\mycompany\webvideojuegos\JakartaRestConfiguration.class
+controller\VideoGamesControl.class
+model\Categoria.class
+dao\CategoriaDAO.class
+controller\InicioSesion.class
+dao\Conexion.class
+dao\UsuarioDao.class
+com\mycompany\webvideojuegos\resources\JakartaEE10Resource.class
+controller\RegistroUsuario.class
+model\Usuario.class
+model\Videojuego.class
