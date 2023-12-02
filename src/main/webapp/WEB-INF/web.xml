@@ -16,6 +16,14 @@
         <servlet-name>InicioSesion</servlet-name>
         <servlet-class>controller.InicioSesion</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ControladorProducto</servlet-name>
+        <servlet-class>controller.ControladorProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>agregarproducto</servlet-name>
+        <servlet-class>controller.agregarproducto</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GamesControl</servlet-name>
         <url-pattern>/GamesControl</url-pattern>
@@ -31,6 +39,14 @@
     <servlet-mapping>
         <servlet-name>InicioSesion</servlet-name>
         <url-pattern>/InicioSesion</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ControladorProducto</servlet-name>
+        <url-pattern>/ControladorProducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>agregarproducto</servlet-name>
+        <url-pattern>/agregarproducto</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

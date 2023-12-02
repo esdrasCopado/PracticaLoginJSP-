@@ -580,7 +580,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Christian Gámez &copy; 2017-2018
+							Esdras Coapdo &copy; 2023
 						</span>
 
 						&nbsp; &nbsp;

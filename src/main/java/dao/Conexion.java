@@ -20,9 +20,9 @@ public class Conexion {
         try {
             Class.forName("com.mysql.cj.jdbc.Driver");
              conn = DriverManager.getConnection(
-                    "jdbc:mysql://aws.connect.psdb.cloud/e-commerce?sslMode=VERIFY_IDENTITY",
-                    "zcw49x2w6t25nitlepnc",
-                    "pscale_pw_DggooXWtS0IWlvBrwjn6SXLnL4zToQ1Kb2ME27Ff1tN");
+  "jdbc:mysql://aws.connect.psdb.cloud/e-commerce?sslMode=VERIFY_IDENTITY",
+  "h7qhovy13vxc7qckigu7",
+  "pscale_pw_fmY4iCnIkN8uykjs0aDNASpw7jzuhxOmU0aEz0GaP0g");
         } catch (Exception e) {
             e.printStackTrace();
 

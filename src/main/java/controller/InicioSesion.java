@@ -12,6 +12,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import dao.CategoriaDAO;
 import dao.UsuarioDao;
+import jakarta.servlet.http.HttpSession;
 import model.Usuario;
 
 /**
@@ -65,18 +66,29 @@ public class InicioSesion extends HttpServlet {
         
         String username=request.getParameter("username");
         String password=request.getParameter("password");
-        
+        Usuario superUsuario=new Usuario();
+        superUsuario.setName("admin");
         
         Usuario usuario=new Usuario();
         usuario.setName(username);
         usuario.setPassword(password);
-        
-        if(UsuarioDao.autenticacion(usuario)){
-            response.sendRedirect("index.jsp");
-        }else{
+
+
+
+        if (UsuarioDao.autenticacion(usuario)) {
+            if(usuario.getName().equals("admin")){
+                response.sendRedirect("listaProductos.jsp");
+            } else {
+                HttpSession objSesion = request.getSession(true);
+                objSesion.setAttribute("user", usuario.getName());
+                response.sendRedirect("menu.jsp");
+            }
+
+        } else {
             request.setAttribute("mensaje", "usuario o clave incorrectas");
-            request.getRequestDispatcher("register.jsp").forward(request, response);
+            request.getRequestDispatcher("login.jsp").forward(request, response);
         }
+
     }
 
     /**

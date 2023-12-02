@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Categoria;
+import model.Producto;
 
 /**
  *
@@ -37,6 +38,7 @@ public class CategoriaDAO {
         }
         
     }
+
     
     public static ArrayList<Categoria> listar(){
         String SQL ="SELECT * FROM category;";

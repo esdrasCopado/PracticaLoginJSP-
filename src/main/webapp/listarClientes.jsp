@@ -380,54 +380,47 @@
 						</a>
 
 						<b class="arrow"></b>
-					</li>
+                                        </li>
 
-					<li class="active open">
-						<a href="#" class="dropdown-toggle">
-							<i class="menu-icon fa fa-book"></i>
-							<span class="menu-text"> Gestionar libros </span>
+                                        <li class="active open">
+                                            <a href="#" class="dropdown-toggle">
+                                                <i class="menu-icon fa fa-book"></i>
+                                                <span class="menu-text"> Gestionar libros </span>
 
-							<b class="arrow fa fa-angle-down"></b>
-						</a>
+                                                <b class="arrow fa fa-angle-down"></b>
+                                            </a>
 
-						<b class="arrow"></b>
+                                            <b class="arrow"></b>
 
-						<ul class="submenu">
-							<li class="active">
-                                                            <a href="listarClientes.jsp">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Lista de Usuarios
-								</a>
+                                            <ul class="submenu">
+                                                <li class="active">
+                                                    <a href="RegistrarProducto.jsp">
+                                                        <i class="menu-icon fa fa-caret-right"></i>
+                                                        Registrar Producto
+                                                    </a>
 
-								<b class="arrow"></b>
-							</li>
+                                                    <b class="arrow"></b>
+                                                </li>
 
-							<li class="">
-                                                            <a href="registroVideoJuegos.jsp">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar videojuego
-								</a>
+                                                <li class="">
+                                                    <a href="listaProductos.jsp">
+                                                        <i class="menu-icon fa fa-caret-right"></i>
+                                                        lista de productos
+                                                    </a>
 
-								<b class="arrow"></b>
-							</li>
-                                                        <li class="">
-                                                            <a href="registroCategoria.jsp">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Registrar categoria
-								</a>
+                                                    <b class="arrow"></b>
+                                                </li>
+                                                <li class="">
+                                                    <a href="listarClientes.jsp">
+                                                        <i class="menu-icon fa fa-caret-right"></i>
+                                                        lista Clientes
+                                                    </a>
 
-								<b class="arrow"></b>
-							</li>
-                                                        <li class="">
-                                                            <a href="listaVideoJuegos.jsp">
-									<i class="menu-icon fa fa-caret-right"></i>
-									Lista de Videojuegos
-								</a>
+                                                    <b class="arrow"></b>
+                                                </li>
 
-								<b class="arrow"></b>
-							</li>
-						</ul>
-					</li>
+                                            </ul>
+                                        </li>
 
 				</ul><!-- /.nav-list -->
 
@@ -690,7 +683,7 @@
 				<div class="footer-inner">
 					<div class="footer-content">
 						<span class="bigger-120">
-							Christian Gámez &copy; 2017-2018
+							Esdras Coapdo&copy; 2023
 						</span>
 
 						&nbsp; &nbsp;
