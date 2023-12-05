@@ -26,3 +26,66 @@ body {
 #login .container #login-row #login-column #login-box #login-form #register-link {
   margin-top: -85px;
 }
+button.HacerRecerva{
+  margin: 10px 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #007bff;
+  border: none;
+  border-radius: 0.3rem;
+  transition: transform 0.2s;
+  
+}
+button.HacerRecerva:hover {
+  transform: scale(1.1);
+  background-color: #007bff; /* Cambia el color de fondo al pasar el cursor */
+  color: white;
+  border-radius: 0.5rem;
+}
+
+.ESmodal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  bottom: 0; /* Cambiar de 'top: 0' a 'bottom: 0' */
+  width: 100%;
+  max-height: 30%; /* Altura máxima de la modal */
+  overflow: auto;
+  
+}
+
+/* Estilos para el contenido de la modal */
+.Mymodal-content {
+position: relative;
+display: flex;
+flex-direction: row;
+justify-content: center;
+width: 30%;
+background-color: #4FE879;
+color: white;
+border-radius: 0.3rem;
+margin: 0 auto;
+font-size: 1.5rem;
+font-weight: bold;
+align-items: baseline;
+
+}
+
+/* Estilos para el botón de cierre */
+.ModalClose {
+  color: #fff;
+  float: right;
+  font-size: 2rem;
+  font-weight: bold;
+  background-color: transparent;
+  border: none;
+  text-decoration: none;
+}
+
+.ModalClose:hover,
+.ModalClose:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}

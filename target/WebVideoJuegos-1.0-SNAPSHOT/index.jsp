@@ -56,7 +56,8 @@
                         var mensajeError = document.getElementById("errorMensaje");
                         var boton = document.getElementById("botonEnviar");
                         event.preventDefault();
-                        var patron = /^[a-zA-Z0-9\s]+$/;
+                        var patron = /^[a-zA-Z0-9@.\s]+$/;
+
 
                         if (!patron.test(entrada)) {
                         mensajeError.textContent = "solo texto y numeros";

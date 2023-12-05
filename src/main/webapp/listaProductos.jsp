@@ -838,6 +838,10 @@ function actualizarProducto(){
     console.error("Error en la petición PUT:", error);
     });
   }
+  
+
+  
+  
   function obtenerDatosInput(){
     nombre=document.getElementById("nombreProducto").value;
     precio=document.getElementById("precioProducto").value;
@@ -910,24 +914,62 @@ contenedorImg.appendChild(imagen);
     // Lógica para editar el producto
     favDialog.showModal();
   } else if (accion === 'eliminar') {
-          var boton=document.createElement("button");
-    boton.innerHTML="ELIMINAR";
-    boton.classList.add("btn","btn-sm","btn-danger","pull-left");
-    boton.style.marginLeft = "10px";
-      boton.onclick = function() {
-    alert("¡Has hecho clic en el botón creado con JavaScript! eliminar");
+          var boton2=document.createElement("button");
+    boton2.innerHTML="ELIMINAR";
+    boton2.classList.add("btn","btn-sm","btn-danger","pull-left");
+    boton2.style.marginLeft = "10px";
+      boton2.onclick = function() {
+          
+      
+      eliminarProducto();
+      
+          
   };
-
-  // Seleccionamos el contenedor donde queremos añadir el botón
+    // Seleccionamos el contenedor donde queremos añadir el botón
   var contenedor = document.getElementById("botonDialog");
 
   // Añadimos el botón al contenedor en el DOM
-  contenedor.appendChild(boton);
+  contenedor.appendChild(boton2);
   
     // Lógica para eliminar el producto
     favDialog.showModal();
+  
   }
+  
+  
 }
+
+function eliminarProducto(){
+    var datos = {
+      id: id
+
+     // Agrega aquí los datos que deseas enviar al servlet
+    };
+
+    fetch('EliminarProducto', {
+    method: 'POST',
+    headers: {
+    'Content-Type': 'application/json' // Tipo de contenido, puede variar según el tipo de datos que envíes
+    },
+    body: JSON.stringify(datos) // Convierte los datos a formato JSON para enviarlos
+    })
+    
+    .then(function(response) {
+    if (response.ok) {
+    // La petición PUT fue exitosa
+    console.log("Petición PUT exitosa");
+    // Puedes realizar más acciones aquí si la petición fue exitosa
+    } else {
+    // La petición PUT falló
+    console.error("Error en la petición PUT");
+    }
+    })
+    
+    .catch(function(error) {
+    // Manejo de errores de red u otros errores de la petición
+    console.error("Error en la petición PUT:", error);
+    });
+  }
                 </script>
 		<!-- inline scripts related to this page -->
 		<script type="text/javascript">

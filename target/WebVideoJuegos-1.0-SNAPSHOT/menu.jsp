@@ -29,6 +29,8 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-
               lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        
         <title>Menu</title>
     </head>
     <body>
@@ -41,8 +43,11 @@
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Productos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item active">
                     <a class="nav-link" href="index.jsp">Cerrar sesión</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="productosReservados.jsp">Mis Compras</a>
                 </li>
 
             </ul>

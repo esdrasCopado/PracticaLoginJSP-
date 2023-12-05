@@ -173,5 +173,27 @@ public boolean RegistroProducto(Producto pro) {
     return false;
 }
 
+public boolean EliminarProducto(int i){
+    PreparedStatement pst=null;
+    ResultSet rs=null;
+    
+    try {
+        String sql="DELETE  FROM `e-commerce`.productos WHERE id_producto=?";
+        Conexion conexion=new Conexion();
+        Connection conn=conexion.getConnection();
+        pst=conn.prepareStatement(sql);
+        pst.setInt(1, i);
+        
+        int filasAfectadas=pst.executeUpdate();
+        if (filasAfectadas > 0) {
+            return true;
+        }
+        
+    } catch (SQLException e) {
+        System.out.println("error al intentar eliminar producto "+e.getMessage());
+    }
+    return false;
+}
+
 
 }

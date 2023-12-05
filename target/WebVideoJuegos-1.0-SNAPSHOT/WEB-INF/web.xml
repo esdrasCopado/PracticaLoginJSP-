@@ -24,6 +24,18 @@
         <servlet-name>agregarproducto</servlet-name>
         <servlet-class>controller.agregarproducto</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ArticulosReservados</servlet-name>
+        <servlet-class>controller.ArticulosReservados</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarProducto</servlet-name>
+        <servlet-class>controller.EliminarProducto</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>LimpiarCarritoServlet</servlet-name>
+        <servlet-class>controller.LimpiarCarritoServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>GamesControl</servlet-name>
         <url-pattern>/GamesControl</url-pattern>
@@ -47,6 +59,18 @@
     <servlet-mapping>
         <servlet-name>agregarproducto</servlet-name>
         <url-pattern>/agregarproducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ArticulosReservados</servlet-name>
+        <url-pattern>/ArticulosReservados</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarProducto</servlet-name>
+        <url-pattern>/EliminarProducto</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>LimpiarCarritoServlet</servlet-name>
+        <url-pattern>/LimpiarCarritoServlet</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

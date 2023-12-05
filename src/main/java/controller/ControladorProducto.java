@@ -108,6 +108,7 @@ public class ControladorProducto extends HttpServlet {
         PrintWriter out = response.getWriter();
         out.println("Datos recibidos en el servidor. Revisa la consola del servidor para verlos.");
     }
+        
 
     /**
      * Returns a short description of the servlet.

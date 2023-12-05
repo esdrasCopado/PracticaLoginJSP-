@@ -33,7 +33,7 @@
                             <h3 class="text-center text-info">Registro</h3>
                             <div class="form-group">
                                 <label for="username" class="text-info">Nombre</label><br>
-                                <input type="text" name="username" id="username" class="form-control" placeholder="nombre de usuario" onblur="validarCampo()">
+                                <input type="text" name="username" id="username" class="form-control" placeholder="nombre de usuario ejemplo@gmail.com" onblur="validarCampo()">
                                 <span id="errorMensaje" class="error"></span>
                             </div>
                             <div class="form-group">
@@ -55,7 +55,8 @@
                         var mensajeError = document.getElementById("errorMensaje");
                         var boton = document.getElementById("botonRegistrar");
                         event.preventDefault();
-                        var patron = /^[a-zA-Z0-9\s]+$/;
+                        var patron = /^[a-zA-Z0-9@.\s]+$/;
+
 
                         if (!patron.test(entrada)) {
                         mensajeError.textContent = "solo texto y numeros";

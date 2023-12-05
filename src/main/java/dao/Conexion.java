@@ -21,8 +21,8 @@ public class Conexion {
             Class.forName("com.mysql.cj.jdbc.Driver");
              conn = DriverManager.getConnection(
   "jdbc:mysql://aws.connect.psdb.cloud/e-commerce?sslMode=VERIFY_IDENTITY",
-  "h7qhovy13vxc7qckigu7",
-  "pscale_pw_fmY4iCnIkN8uykjs0aDNASpw7jzuhxOmU0aEz0GaP0g");
+  "i7mh0g8mibmut22fzdyn",
+  "pscale_pw_aYPmffQhTONRZX8kS8yEFJU94ce5DbXClXoQTvK94cR");
         } catch (Exception e) {
             e.printStackTrace();
 
